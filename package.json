@@ -1,12 +1,39 @@
 {
+  "private": true,
   "name": "view_transition",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "View transition w/ React and React Router 6.",
+  "main": "src/index.js",
+  "keywords": [
+    "view transition",
+    "react router 6"
+  ],
+  "author": "koko le gorille",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack serve --mode development",
+    "lint": "./node_modules/.bin/eslint src --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "esbuild-loader": "^4.0.2",
+    "eslint": "^8.49.0",
+    "eslint-plugin-react": "^7.33.2",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass": "^1.67.0",
+    "sass-loader": "^13.3.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
