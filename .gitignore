@@ -1,0 +1,11 @@
+/dist
+/node_modules
+/static/assets
+npm-debug.log
+
+# MAC
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
