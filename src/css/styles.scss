@@ -1,3 +1,21 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .link__container a {
+    margin-right: 10px;
+  }
+  .main__container {
+    width: 90%;
+    padding: 3px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
 /* Views Animation */
 ::view-transition-old(root) {
     animation: fade-and-scale-out 0.5s ease-in-out 1 forwards;
